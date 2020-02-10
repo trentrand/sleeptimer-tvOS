@@ -1,0 +1,9 @@
+{
+	Filter = {
+		Bundles = (
+			"com.apple.TVSystemMenuService",
+			"com.apple.PineBoard",
+			"com.apple.Foundation",
+		);
+	};
+}

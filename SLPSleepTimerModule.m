@@ -22,13 +22,28 @@
 }
 
 -(void)handleAction {
+  NSLog(@"user clicked notification center button");
 
-  NSLog(@"handleAction");
+  UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"My Alert"
+    message:@"This is an alert."
+    preferredStyle:UIAlertControllerStyleAlert];
 
+  UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK"
+    style:UIAlertActionStyleDefault
+    handler:^(UIAlertAction * action) {}];
+
+  [alertController addAction:defaultAction];
+
+  UIViewController *viewController = self.contentViewController.view.window.rootViewController;
+  if (viewController.presentedViewController && !viewController.presentedViewController.isBeingDismissed ) {
+    viewController = viewController.presentedViewController;
+  }
+
+  [viewController presentViewController: alertController animated: YES completion:nil];
 }
 
 -(BOOL)dismissAfterAction {
-  return TRUE;
+  return FALSE;
 }
 
 @end

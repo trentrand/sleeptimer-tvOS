@@ -9,5 +9,3 @@
 -(void)handleAction;
 -(BOOL)dismissAfterAction;
 @end
-
-

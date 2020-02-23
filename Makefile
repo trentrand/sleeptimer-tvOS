@@ -20,6 +20,6 @@ include $(THEOS_MAKE_PATH)/bundle.mk
 include $(THEOS_MAKE_PATH)/tweak.mk
 
 internal-stage::
-	$(ECHO_NOTHING)rm -r ./src/Resources/*.storyboardc$(ECHO_END)
+	$(ECHO_NOTHING)rm -r ./src/Resources/*.storyboardc || true$(ECHO_END)
 	$(ECHO_NOTHING)mkdir -p $(THEOS_STAGING_DIR)/Library/TVSystemMenuModules$(ECHO_END)
 	$(ECHO_NOTHING)xcrun ibtool --errors --warnings --output-format human-readable-text --module SleepTimer --compile ./Resources/Main.storyboardc ./Main.storyboard$(ECHO_END)

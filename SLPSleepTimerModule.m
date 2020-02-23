@@ -23,27 +23,23 @@
   return buttonController;
 }
 
-
--(void)showView {
-  // Create a reference to the the appropriate storyboard
-  UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle bundleWithPath:kBundlePath]];
-  UIViewController* customViewController = [storyboard instantiateViewControllerWithIdentifier:@"AlarmModalViewController"];
-
-  NSLog(@"presenting view controller");
-
-  UIViewController *viewController = self.contentViewController.view.window.rootViewController;
-  if (viewController.presentedViewController && !viewController.presentedViewController.isBeingDismissed) {
-    viewController = viewController.presentedViewController;
+-(void)showModal {
+  UIViewController *rootViewController = self.contentViewController.view.window.rootViewController;
+  if (rootViewController.presentedViewController && !rootViewController.presentedViewController.isBeingDismissed) {
+    rootViewController = rootViewController.presentedViewController;
   }
 
-  [viewController presentViewController: customViewController animated: YES completion:nil];
+  UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle bundleWithPath:kBundlePath]];
+  UIViewController* alarmModalViewController = [storyboard instantiateViewControllerWithIdentifier:@"AlarmModalViewController"];
+
+  [rootViewController presentViewController: alarmModalViewController animated: YES completion:nil];
 }
 
 -(void)handleAction {
   NSLog(@"user clicked notification center button");
 
   // Render
-  [self showView];
+  [self showModal];
 }
 
 -(BOOL)dismissAfterAction {

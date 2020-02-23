@@ -1,5 +1,5 @@
-#import <UIKit/UIKit.h>
+#import "AlarmModalViewController.h"
 
-@interface AlarmModalViewController : UIViewController
+@implementation AlarmModalViewController
 
 @end

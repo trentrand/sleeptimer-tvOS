@@ -1,3 +1,5 @@
+#define kBundlePath @"/Library/TVSystemMenuModules/SleepTimer.bundle"
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <TVSystemMenuUI/TVSMButtonViewController.h>
@@ -48,14 +50,30 @@
   [customView addSubview:button];
 }
 
+-(void)showView {
+  // Create a reference to the the appropriate storyboard
+  UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle bundleWithPath:kBundlePath]];
+  UIViewController* customViewController = [storyboard instantiateViewControllerWithIdentifier:@"AlarmModalViewController"];
+
+  NSLog(@"presenting view controller");
+
+  UIViewController *viewController = self.contentViewController.view.window.rootViewController;
+  if (viewController.presentedViewController && !viewController.presentedViewController.isBeingDismissed) {
+    viewController = viewController.presentedViewController;
+  }
+
+  [viewController presentViewController: customViewController animated: YES completion:nil];
+}
 
 -(void)handleAction {
   NSLog(@"user clicked notification center button");
 
   // (Experimental: show a alert with custom view, a potential route for displaying ui)
-  [self showAlert];
+  // [self showAlert];
 
 
+  // Render
+  [self showView];
 }
 
 -(BOOL)dismissAfterAction {

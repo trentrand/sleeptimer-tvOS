@@ -1,5 +1,5 @@
 Package: com.trentrand.sleeptimer
-Name: Sleep Timer
+Name: SleepTimer
 Depends: mobilesubstrate, com.nito.tvcontrolcenter (>=1.1), firmware (>= 13.0)
 Version: 0.0.1
 Architecture: appletvos-arm64

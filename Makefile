@@ -10,8 +10,8 @@ SleepTimer_FILES = SLPSleepTimerModule.m
 SleepTimer_INSTALL_PATH = /Library/TVSystemMenuModules
 SleepTimer_FRAMEWORKS = UIKit
 SleepTimer_PRIVATE_FRAMEWORKS = TVSystemMenuUI
-SleepTimer_CFLAGS = -fobjc-arc  -F. -I.
-SleepTimer_LDFLAGS +=  -F. -I.
+SleepTimer_CFLAGS = -fobjc-arc -F. -I.
+SleepTimer_LDFLAGS += -F. -I.
 
 SleepTimerTweak_FILES = Tweak.xm
 SleepTimerTweak_FRAMEWORKS = UIKit
@@ -21,3 +21,4 @@ include $(THEOS_MAKE_PATH)/tweak.mk
 
 internal-stage::
 	$(ECHO_NOTHING)mkdir -p $(THEOS_STAGING_DIR)/Library/TVSystemMenuModules$(ECHO_END)
+	$(ECHO_NOTHING)xcrun ibtool --errors --warnings --output-format human-readable-text --module SleepTimer --compile ./Resources/Main.storyboardc ./Main.storyboard$(ECHO_END)

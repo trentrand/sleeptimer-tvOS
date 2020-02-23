@@ -41,7 +41,15 @@
     UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
     blurEffectView.frame = alarmModalViewController.view.bounds;
     blurEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+
     [alarmModalViewController.view insertSubview:blurEffectView atIndex: 0];
+
+    UIVibrancyEffect *vibrancyEffect = [UIVibrancyEffect effectForBlurEffect: blurEffect];
+    UIVisualEffectView *vibrancyEffectView = [[UIVisualEffectView alloc] initWithEffect: vibrancyEffect];
+    vibrancyEffectView.frame = alarmModalViewController.view.bounds;
+    vibrancyEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+
+    [alarmModalViewController.view insertSubview:vibrancyEffectView atIndex: 0];
   }
 
   [rootViewController presentViewController: alarmModalViewController animated: YES completion:nil];

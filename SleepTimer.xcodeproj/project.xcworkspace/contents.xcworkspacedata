@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../AlarmModalViewController.m">
+   </FileRef>
+   <FileRef
+      location = "group:../control">
+   </FileRef>
+   <FileRef
+      location = "group:../layout">
+   </FileRef>
+   <FileRef
+      location = "group:../Main.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:../Makefile">
+   </FileRef>
+   <FileRef
+      location = "group:../packages">
+   </FileRef>
+   <FileRef
+      location = "group:../PineBoardServices.framework">
+   </FileRef>
+   <FileRef
+      location = "group:../Resources">
+   </FileRef>
+   <FileRef
+      location = "group:../SleepTimerTweak.plist">
+   </FileRef>
+   <FileRef
+      location = "group:../SLPSleepTimerModule.h">
+   </FileRef>
+   <FileRef
+      location = "group:../SLPSleepTimerModule.m">
+   </FileRef>
+   <FileRef
+      location = "group:../TVSystemMenuUI.framework">
+   </FileRef>
+   <FileRef
+      location = "group:../Tweak.xm">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

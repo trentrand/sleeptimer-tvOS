@@ -32,6 +32,18 @@
   UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle bundleWithPath:kBundlePath]];
   UIViewController* alarmModalViewController = [storyboard instantiateViewControllerWithIdentifier:@"AlarmModalViewController"];
 
+  if (UIAccessibilityIsReduceTransparencyEnabled()) {
+    alarmModalViewController.view.backgroundColor = [UIColor blackColor];
+  } else {
+    alarmModalViewController.view.backgroundColor = [UIColor clearColor];
+
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    UIVisualEffectView *blurEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+    blurEffectView.frame = alarmModalViewController.view.bounds;
+    blurEffectView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [alarmModalViewController.view insertSubview:blurEffectView atIndex: 0];
+  }
+
   [rootViewController presentViewController: alarmModalViewController animated: YES completion:nil];
 }
 

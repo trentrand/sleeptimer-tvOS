@@ -1,18 +1,12 @@
 #define kBundlePath @"/Library/TVSystemMenuModules/SleepTimer.bundle"
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 #import <TVSystemMenuUI/TVSMButtonViewController.h>
 #include "SLPSleepTimerModule.h"
 
-@implementation SLPSleepTimerModule
-
-+(long long)buttonStyle {
-  return 2;
-}
+@implementation SLPSleepTimerModule : TVSMActionModule
 
 -(id)contentViewController {
-
   TVSMButtonViewController *buttonController = (TVSMButtonViewController*)[super contentViewController];
   [buttonController setTitleText:@"Sleep Timer"];
   [buttonController setSecondaryText:@"No sleep timer active"];
@@ -30,11 +24,13 @@
   }
 
   UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle bundleWithPath:kBundlePath]];
+
   UIViewController* alarmModalViewController = [storyboard instantiateViewControllerWithIdentifier:@"AlarmModalViewController"];
 
   if (UIAccessibilityIsReduceTransparencyEnabled()) {
     alarmModalViewController.view.backgroundColor = [UIColor blackColor];
   } else {
+    // Add vibrancy effect to AlarmModalView
     alarmModalViewController.view.backgroundColor = [UIColor clearColor];
 
     UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
@@ -44,6 +40,7 @@
 
     [alarmModalViewController.view insertSubview:blurEffectView atIndex: 0];
 
+    // Add vibrancy effect to AlarmModalView
     UIVibrancyEffect *vibrancyEffect = [UIVibrancyEffect effectForBlurEffect: blurEffect];
     UIVisualEffectView *vibrancyEffectView = [[UIVisualEffectView alloc] initWithEffect: vibrancyEffect];
     vibrancyEffectView.frame = alarmModalViewController.view.bounds;
@@ -56,14 +53,15 @@
 }
 
 -(void)handleAction {
-  NSLog(@"user clicked notification center button");
-
-  // Render
   [self showModal];
 }
 
 -(BOOL)dismissAfterAction {
   return FALSE;
+}
+
++(long long)buttonStyle {
+  return 2; // full-width
 }
 
 @end

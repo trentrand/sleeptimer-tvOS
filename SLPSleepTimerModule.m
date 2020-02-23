@@ -23,32 +23,6 @@
   return buttonController;
 }
 
--(void)showAlert {
-  UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"Set a sleep timer"
-    message:@""
-    preferredStyle:UIAlertControllerStyleAlert];
-
-  UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Confirm"
-    style:UIAlertActionStyleDefault
-    handler:^(UIAlertAction * action) {}];
-
-  [alertController addAction:defaultAction];
-
-  CGFloat margin = 0.0F;
-  CGFloat width = alertController.view.bounds.size.width;
-  CGFloat height = alertController.view.bounds.size.height;
-  UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(-1 * width / 2, -1 * height / 2, width / 2, height / 2)];
-  customView.backgroundColor = [UIColor greenColor];
-  [alertController.view addSubview:customView];
-
-  UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-  [button setTitle:@"Show View" forState:UIControlStateNormal];
-  [button setTitleColor:[UIColor blackColor] forState: UIControlStateNormal];
-  button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-  button.frame = CGRectMake(margin, margin, 400.0F, 100.0F);
-  // button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
-  [customView addSubview:button];
-}
 
 -(void)showView {
   // Create a reference to the the appropriate storyboard
@@ -67,10 +41,6 @@
 
 -(void)handleAction {
   NSLog(@"user clicked notification center button");
-
-  // (Experimental: show a alert with custom view, a potential route for displaying ui)
-  // [self showAlert];
-
 
   // Render
   [self showView];

@@ -19,31 +19,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="One-ZO-ghU">
-                                <rect key="frame" x="878.5" y="461" width="163" height="158"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="One-ZO-ghU">
+                                <rect key="frame" x="761" y="448" width="399" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="132"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V17-Be-kuQ">
-                                <rect key="frame" x="627" y="474.5" width="128" height="131"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V17-Be-kuQ">
+                                <rect key="frame" x="627" y="448" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="-"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTu-ND-ORl">
-                                <rect key="frame" x="1166" y="474.5" width="128" height="131"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTu-ND-ORl">
+                                <rect key="frame" x="1166" y="448" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="+"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Set sleep timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1w-oj-Wf2">
-                                <rect key="frame" x="716.5" y="203" width="487" height="198"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set sleep timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1w-oj-Wf2">
+                                <rect key="frame" x="654" y="199" width="612" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc4-3T-OaR">
-                                <rect key="frame" x="900" y="627" width="120" height="56"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc4-3T-OaR">
+                                <rect key="frame" x="900" y="584" width="120" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="MINS">
                                         <attributes>
@@ -55,21 +60,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyn-wC-X03">
-                                <rect key="frame" x="818" y="773" width="285" height="86"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Start"/>
-                            </button>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="One-ZO-ghU" firstAttribute="centerX" secondItem="bm1-1Q-CM2" secondAttribute="centerX" id="2Ej-Cl-ZEV"/>
-                            <constraint firstItem="hc4-3T-OaR" firstAttribute="centerX" secondItem="bm1-1Q-CM2" secondAttribute="centerX" id="BCD-QJ-skc"/>
-                            <constraint firstItem="KTu-ND-ORl" firstAttribute="top" secondItem="V17-Be-kuQ" secondAttribute="top" id="CCm-iE-wF1"/>
-                            <constraint firstItem="xyn-wC-X03" firstAttribute="centerX" secondItem="bm1-1Q-CM2" secondAttribute="centerX" id="EzP-5C-yxk"/>
-                            <constraint firstItem="KTu-ND-ORl" firstAttribute="centerY" secondItem="One-ZO-ghU" secondAttribute="centerY" id="KY0-H4-tyX"/>
-                            <constraint firstItem="KTu-ND-ORl" firstAttribute="centerY" secondItem="pVX-kS-Xhy" secondAttribute="centerY" id="NST-X2-aKs"/>
-                            <constraint firstItem="R1w-oj-Wf2" firstAttribute="centerX" secondItem="bm1-1Q-CM2" secondAttribute="centerX" id="Ogc-bl-bVt"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pVX-kS-Xhy"/>
                     </view>
                 </viewController>

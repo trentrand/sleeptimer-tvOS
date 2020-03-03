@@ -1,6 +1,6 @@
 //
 //  AlarmModalViewController.h
-//  
+//
 //
 //  Created by Trent Rand on 2/23/20.
 //

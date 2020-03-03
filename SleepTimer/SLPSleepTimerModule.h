@@ -1,6 +1,7 @@
 #import <TVSystemMenuUI/TVSMModuleContentViewControllerDelegate.h>
 #import <TVSystemMenuUI/TVSMModuleContentViewController.h>
 #import <TVSystemMenuUI/TVSMActionModule.h>
+#import <TVSystemMenuUI/TVSMButtonViewController.h>
 
 @interface SLPSleepTimerModule : TVSMActionModule
 

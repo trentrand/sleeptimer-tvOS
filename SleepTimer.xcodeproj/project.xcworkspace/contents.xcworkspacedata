@@ -2,13 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../AlarmModalViewController.h">
-   </FileRef>
-   <FileRef
-      location = "group:../AlarmModalViewController.m">
-   </FileRef>
-   <FileRef
-      location = "group:../Main.storyboard">
+      location = "group:/Users/trand/Developer/tvOS-SleepTimer/SleepTimer/SleepTimer(Bundle)/Main.storyboard">
    </FileRef>
    <FileRef
       location = "self:">

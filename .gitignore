@@ -2,5 +2,5 @@ obj
 .theos
 _
 *.deb
-SleepTimer/Resources/*.storyboardc/**
+*.storyboardc
 xcuserdata/

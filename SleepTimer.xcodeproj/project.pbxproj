@@ -7,18 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8737D434240F65BA00F97E0E /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 87D74DAB240CBFB700463090 /* Resources */; };
 		8780BD7A240CCB06007D948B /* PineBoardServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8780BD78240CCB06007D948B /* PineBoardServices.framework */; };
 		8780BD7B240CCB06007D948B /* TVSystemMenuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8780BD79240CCB06007D948B /* TVSystemMenuUI.framework */; };
-		87EF8A69240CAEE500F28579 /* AlarmModalViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5D240C731100F28579 /* AlarmModalViewController.h */; };
-		87EF8A6A240CAEE500F28579 /* AlarmModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5B240C731100F28579 /* AlarmModalViewController.m */; };
-		87EF8A6B240CAEE500F28579 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5C240C731100F28579 /* Main.storyboard */; };
-		87EF8A6C240CAEE500F28579 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5A240C731100F28579 /* Makefile */; };
-		87EF8A6E240CAEE500F28579 /* SLPSleepTimerModule.h in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A59240C731100F28579 /* SLPSleepTimerModule.h */; };
-		87EF8A6F240CAEE500F28579 /* SLPSleepTimerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5E240C731100F28579 /* SLPSleepTimerModule.m */; };
-		87EF8A72240CAEFE00F28579 /* SleepTimerTweak.plist in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A68240CAEB700F28579 /* SleepTimerTweak.plist */; };
-		87EF8A73240CAEFE00F28579 /* control in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A65240CAEB600F28579 /* control */; };
-		87EF8A74240CAEFE00F28579 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A66240CAEB600F28579 /* Makefile */; };
-		87EF8A75240CAEFE00F28579 /* Tweak.xm in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A64240CAEB600F28579 /* Tweak.xm */; };
+		87B6D99A2410A49A0024E70D /* SleepTimerTweak.plist in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A68240CAEB700F28579 /* SleepTimerTweak.plist */; };
+		87B6D99B2410A49A0024E70D /* control in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A65240CAEB600F28579 /* control */; };
+		87B6D99C2410A49A0024E70D /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A66240CAEB600F28579 /* Makefile */; };
+		87B6D99D2410A49A0024E70D /* Tweak.xm in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A64240CAEB600F28579 /* Tweak.xm */; };
+		87B6D99E2410A4AA0024E70D /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5A240C731100F28579 /* Makefile */; };
+		87B6D9A02410A4AA0024E70D /* SLPSleepTimerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5E240C731100F28579 /* SLPSleepTimerModule.m */; };
+		87B6D9A22410A4AA0024E70D /* AlarmModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5B240C731100F28579 /* AlarmModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -117,24 +115,14 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		872068B9240CC83B00A6D740 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		87EF8A4E240C72EB00F28579 /* SleepTimer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87EF8A58240C72EB00F28579 /* Build configuration list for PBXNativeTarget "SleepTimer" */;
 			buildPhases = (
-				872068B9240CC83B00A6D740 /* Headers */,
 				87EF8A4B240C72EB00F28579 /* Sources */,
 				87EF8A4C240C72EB00F28579 /* Frameworks */,
+				8737D431240F655500F97E0E /* Resources */,
 				87EF8A4D240C72EB00F28579 /* CopyFiles */,
 				87EF8A76240CAF1800F28579 /* Run Script */,
 			);
@@ -154,6 +142,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Trent Rand";
 				TargetAttributes = {
 					87EF8A4E240C72EB00F28579 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -178,6 +167,17 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		8737D431240F655500F97E0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8737D434240F65BA00F97E0E /* Resources in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
 		87EF8A76240CAF1800F28579 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -195,7 +195,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/zsh;
-			shellScript = "make package install;\n";
+			shellScript = "export THEOS_DEVICE_IP=Bedroom.local\nmake package install;\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -204,16 +204,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87EF8A72240CAEFE00F28579 /* SleepTimerTweak.plist in Sources */,
-				87EF8A73240CAEFE00F28579 /* control in Sources */,
-				87EF8A74240CAEFE00F28579 /* Makefile in Sources */,
-				87EF8A75240CAEFE00F28579 /* Tweak.xm in Sources */,
-				87EF8A6C240CAEE500F28579 /* Makefile in Sources */,
-				87EF8A69240CAEE500F28579 /* AlarmModalViewController.h in Sources */,
-				87EF8A6A240CAEE500F28579 /* AlarmModalViewController.m in Sources */,
-				87EF8A6B240CAEE500F28579 /* Main.storyboard in Sources */,
-				87EF8A6E240CAEE500F28579 /* SLPSleepTimerModule.h in Sources */,
-				87EF8A6F240CAEE500F28579 /* SLPSleepTimerModule.m in Sources */,
+				87B6D99E2410A4AA0024E70D /* Makefile in Sources */,
+				87B6D9A02410A4AA0024E70D /* SLPSleepTimerModule.m in Sources */,
+				87B6D9A22410A4AA0024E70D /* AlarmModalViewController.m in Sources */,
+				87B6D99A2410A49A0024E70D /* SleepTimerTweak.plist in Sources */,
+				87B6D99B2410A49A0024E70D /* control in Sources */,
+				87B6D99C2410A49A0024E70D /* Makefile in Sources */,
+				87B6D99D2410A49A0024E70D /* Tweak.xm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,13 +220,42 @@
 		87EF8A49240C721C00F28579 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SleepTimer/Frameworks",
 					"$(PROJECT_DIR)/Frameworks",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = SleepTimer;
 				SDKROOT = appletvos;
 			};
 			name = Debug;
@@ -237,12 +263,38 @@
 		87EF8A4A240C721C00F28579 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SleepTimer/Frameworks",
 					"$(PROJECT_DIR)/Frameworks",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Frameworks\"/**";
+				PRODUCT_NAME = SleepTimer;
 				SDKROOT = appletvos;
 			};
 			name = Release;

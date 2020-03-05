@@ -10,7 +10,7 @@
         <!--Alarm Modal View Controller-->
         <scene sceneID="e25-Ps-1XL">
             <objects>
-                <viewController storyboardIdentifier="AlarmModalViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="F8s-XB-Ch9" customClass="AlarmModalViewController" customModule="SleepTimer" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="alarmModal" id="F8s-XB-Ch9" customClass="AlarmModalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2yb-Ca-DdP"/>
                         <viewControllerLayoutGuide type="bottom" id="ZcP-VA-nuz"/>
@@ -19,18 +19,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="One-ZO-ghU">
-                                <rect key="frame" x="761" y="448" width="399" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="132"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V17-Be-kuQ">
                                 <rect key="frame" x="627" y="448" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="handleDecrementTimer" destination="F8s-XB-Ch9" eventType="primaryActionTriggered" id="xfM-LQ-SWu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTu-ND-ORl">
                                 <rect key="frame" x="1166" y="448" width="128" height="128"/>
@@ -38,6 +35,9 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="handleIncrementTimer" destination="F8s-XB-Ch9" eventType="primaryActionTriggered" id="VJe-b5-BBC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set sleep timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1w-oj-Wf2">
                                 <rect key="frame" x="654" y="199" width="612" height="198"/>
@@ -60,9 +60,18 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ5-12-tLI">
+                                <rect key="frame" x="761" y="448" width="399" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="132"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pVX-kS-Xhy"/>
                     </view>
+                    <connections>
+                        <outlet property="timerLabel" destination="MQ5-12-tLI" id="sOu-5j-wTA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzw-hR-TOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

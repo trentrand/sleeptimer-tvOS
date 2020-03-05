@@ -27,5 +27,7 @@
 		<key>CFBundlePrimaryIcon</key>
 		<string>Package</string>
 	</dict>
+	<key>NSMainStoryboardFile</key>
+	<string>Main</string>
 </dict>
 </plist>

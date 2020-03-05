@@ -3,6 +3,7 @@
 #import <UIKit/UIKit.h>
 #import <TVSystemMenuUI/TVSMButtonViewController.h>
 #include "SLPSleepTimerModule.h"
+#include "AlarmModalViewController.h"
 
 @implementation SLPSleepTimerModule : TVSMActionModule
 
@@ -25,7 +26,7 @@
 
   UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: [NSBundle bundleWithPath:kBundlePath]];
 
-  UIViewController* alarmModalViewController = [storyboard instantiateViewControllerWithIdentifier:@"AlarmModalViewController"];
+  AlarmModalViewController* alarmModalViewController = (AlarmModalViewController  *) [storyboard instantiateViewControllerWithIdentifier:@"alarmModal"];
 
   if (UIAccessibilityIsReduceTransparencyEnabled()) {
     alarmModalViewController.view.backgroundColor = [UIColor blackColor];

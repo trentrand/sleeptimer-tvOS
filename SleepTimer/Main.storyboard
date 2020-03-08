@@ -29,7 +29,7 @@
                                     <action selector="handleDecrementTimer" destination="F8s-XB-Ch9" eventType="primaryActionTriggered" id="xfM-LQ-SWu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTu-ND-ORl">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTu-ND-ORl">
                                 <rect key="frame" x="1166" y="448" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -66,10 +66,21 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="132"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqN-SQ-bnO">
+                                <rect key="frame" x="827" y="517" width="267" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Start Timer"/>
+                                <connections>
+                                    <action selector="handleToggleTimer" destination="F8s-XB-Ch9" eventType="primaryActionTriggered" id="zLH-aC-6i6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pVX-kS-Xhy"/>
                     </view>
                     <connections>
+                        <outlet property="decrementButton" destination="V17-Be-kuQ" id="1b8-wD-kMD"/>
                         <outlet property="timerLabel" destination="MQ5-12-tLI" id="sOu-5j-wTA"/>
                     </connections>
                 </viewController>

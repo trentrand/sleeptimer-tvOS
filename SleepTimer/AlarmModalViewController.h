@@ -10,9 +10,14 @@
 @interface AlarmModalViewController : UIViewController
 
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *timerLabel;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *decrementButton;
 
 - (IBAction)handleDecrementTimer;
 - (IBAction)handleIncrementTimer;
+- (IBAction)handleToggleTimer;
+
+- (void)startTimer;
+- (void)cancelTimer;
 
 - (void)setMinutesRemaining:(int)minutes;
 

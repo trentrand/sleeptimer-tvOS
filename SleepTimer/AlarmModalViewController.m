@@ -11,11 +11,8 @@ const int startingTimerSpan = 15;
 int minutesRemaining;
 int step = 15;
 
-- (id)init {
-    if (self = [super init]) {
-      [self setMinutesRemaining: startingTimerSpan];
-    }
-    return self;
+- (void)viewDidLoad {
+  [self setMinutesRemaining: startingTimerSpan];
 }
 
 - (IBAction)handleDecrementTimer {

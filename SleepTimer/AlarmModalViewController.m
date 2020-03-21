@@ -49,13 +49,13 @@ dispatch_source_t CreateDispatchTimer(double interval, dispatch_queue_t queue, d
 
 - (void)startTimer {
   dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-  double secondsToFire = minutesRemaining; // switch "seconds" to minutes after debugging
+  double secondsToFire = minutesRemaining; // TODO: * 60; # switch "seconds" to minutes after debugging
 
   _timer = CreateDispatchTimer(secondsToFire, queue, ^{
-    NSLog(@"TIMER FIRED!");
-    self.timerLabel.text = [NSString stringWithFormat: @"PING"];
-    [NSThread sleepForTimeInterval:3.0f];
-    [self setMinutesRemaining: startingTimerSpan];
+    [self cancelTimer];
+    id connection = [PBSSystemServiceConnection sharedConnection];
+    id ssp = [connection systemServiceProxy];
+    [ssp sleepSystemForReason:@"UserSettings"];
   });
 }
 

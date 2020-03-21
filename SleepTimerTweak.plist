@@ -1,6 +1,7 @@
 {
 	Filter = {
 		Bundles = (
+			"com.apple.PineBoardServices",
 			"com.apple.TVSystemMenuService",
 			"com.apple.PineBoard",
 			"com.apple.Foundation",

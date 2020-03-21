@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871AD05C2426787000324406 /* SleepTimer.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 871AD05B2426787000324406 /* SleepTimer.entitlements */; };
 		8737D434240F65BA00F97E0E /* Resources in Resources */ = {isa = PBXBuildFile; fileRef = 87D74DAB240CBFB700463090 /* Resources */; };
+		876F00E5242311A800EFDB4A /* Tweak.xm in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A64240CAEB600F28579 /* Tweak.xm */; };
 		8780BD7A240CCB06007D948B /* PineBoardServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8780BD78240CCB06007D948B /* PineBoardServices.framework */; };
 		8780BD7B240CCB06007D948B /* TVSystemMenuUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8780BD79240CCB06007D948B /* TVSystemMenuUI.framework */; };
 		87B6D99A2410A49A0024E70D /* SleepTimerTweak.plist in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A68240CAEB700F28579 /* SleepTimerTweak.plist */; };
 		87B6D99B2410A49A0024E70D /* control in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A65240CAEB600F28579 /* control */; };
 		87B6D99C2410A49A0024E70D /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A66240CAEB600F28579 /* Makefile */; };
-		87B6D99D2410A49A0024E70D /* Tweak.xm in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A64240CAEB600F28579 /* Tweak.xm */; };
 		87B6D99E2410A4AA0024E70D /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5A240C731100F28579 /* Makefile */; };
 		87B6D9A02410A4AA0024E70D /* SLPSleepTimerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5E240C731100F28579 /* SLPSleepTimerModule.m */; };
 		87B6D9A22410A4AA0024E70D /* AlarmModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8A5B240C731100F28579 /* AlarmModalViewController.m */; };
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		871AD05B2426787000324406 /* SleepTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepTimer.entitlements; sourceTree = "<group>"; };
 		8780BD78240CCB06007D948B /* PineBoardServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PineBoardServices.framework; path = Frameworks/PineBoardServices.framework; sourceTree = "<group>"; };
 		8780BD79240CCB06007D948B /* TVSystemMenuUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVSystemMenuUI.framework; path = Frameworks/TVSystemMenuUI.framework; sourceTree = "<group>"; };
 		87D74DAB240CBFB700463090 /* Resources */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Resources; path = SleepTimer/Resources; sourceTree = SOURCE_ROOT; };
@@ -42,7 +44,7 @@
 		87EF8A5C240C731100F28579 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		87EF8A5D240C731100F28579 /* AlarmModalViewController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = AlarmModalViewController.h; path = ../AlarmModalViewController.h; sourceTree = "<group>"; };
 		87EF8A5E240C731100F28579 /* SLPSleepTimerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLPSleepTimerModule.m; path = ../SLPSleepTimerModule.m; sourceTree = "<group>"; };
-		87EF8A64240CAEB600F28579 /* Tweak.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tweak.xm; sourceTree = SOURCE_ROOT; };
+		87EF8A64240CAEB600F28579 /* Tweak.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = Tweak.xm; sourceTree = SOURCE_ROOT; };
 		87EF8A65240CAEB600F28579 /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = SOURCE_ROOT; };
 		87EF8A66240CAEB600F28579 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile; sourceTree = SOURCE_ROOT; };
 		87EF8A68240CAEB700F28579 /* SleepTimerTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = SleepTimerTweak.plist; sourceTree = SOURCE_ROOT; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				87EF8A68240CAEB700F28579 /* SleepTimerTweak.plist */,
+				871AD05B2426787000324406 /* SleepTimer.entitlements */,
 				87EF8A65240CAEB600F28579 /* control */,
 				87EF8A66240CAEB600F28579 /* Makefile */,
 				87EF8A64240CAEB600F28579 /* Tweak.xm */,
@@ -172,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				871AD05C2426787000324406 /* SleepTimer.entitlements in Resources */,
 				8737D434240F65BA00F97E0E /* Resources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,13 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876F00E5242311A800EFDB4A /* Tweak.xm in Sources */,
 				87B6D99E2410A4AA0024E70D /* Makefile in Sources */,
 				87B6D9A02410A4AA0024E70D /* SLPSleepTimerModule.m in Sources */,
 				87B6D9A22410A4AA0024E70D /* AlarmModalViewController.m in Sources */,
 				87B6D99A2410A49A0024E70D /* SleepTimerTweak.plist in Sources */,
 				87B6D99B2410A49A0024E70D /* control in Sources */,
 				87B6D99C2410A49A0024E70D /* Makefile in Sources */,
-				87B6D99D2410A49A0024E70D /* Tweak.xm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +240,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -279,6 +284,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -331,6 +337,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -401,6 +408,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";

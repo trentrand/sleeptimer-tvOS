@@ -5,7 +5,11 @@
 //  Created by Trent Rand on 2/23/20.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+#import <PineBoardServices/PBSSystemService.h>
+#import <PineBoardServices/PBSSystemServiceConnection.h>
 
 @interface AlarmModalViewController : UIViewController
 
